@@ -19,7 +19,7 @@ def create_user():
         'email': request.form['email']
     }
     User.save_user(data)
-    return redirect('/')
+    return redirect('/users')
 
 
 

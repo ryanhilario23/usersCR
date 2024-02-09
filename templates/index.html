@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create user</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div>
+    <div class="flex">
         <H1>Add a New User</H1> 
-        <a href="">Home</a>
+        <a href="/users" style="font-size: 20px;text-decoration: none;">Home</a>
     </div>
-
+    <div class="flex">
     <form action="/create_user" method="POST">
         <label for="first_name" >First Name:</label><br>
         <input type="text"name="first_name"><br>
@@ -20,6 +21,6 @@
         <input type="text" name="email"><br>
         <input type="submit" value="Create">
     </form>
-
+    </div>
 </body>
 </html> 
